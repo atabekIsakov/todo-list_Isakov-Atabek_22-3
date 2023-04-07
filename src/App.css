@@ -1,0 +1,56 @@
+.App {
+  margin-top: 80px;
+  gap: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+select {
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #f7f7f7;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option:checked {
+  background-color: #ddd;
+}
+
+select option:hover {
+  background-color: #ddd;
+  color: #000;
+  cursor: pointer;
+}
+
+select option:first-child {
+  font-weight: bold;
+}
+

@@ -1,0 +1,71 @@
+.todoCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 550px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    flex-wrap: nowrap;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+@media (max-width: 600px) {
+    .todoCard {
+        display: block;
+        margin-right: 90px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.buttons {
+    width: 270px;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+.head {
+    width: 250px;
+    display: flex;
+}
+.head > h5 {
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: 'franklin gothic medium';
+}
+.inputs {
+    align-items: center;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .buttons {
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .head {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .head > h5 {
+        padding-right: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .inputs {
+        width: 100%;
+        text-align: center;
+    }
+}
